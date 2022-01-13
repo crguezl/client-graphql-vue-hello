@@ -1,6 +1,12 @@
-# vue-graphql-demo
+## Vue Cli
 
-## Project setup
+* [Building a CRUD App with Vue and GraphQL](https://blog.jscrambler.com/building-a-crud-app-with-vue-and-graphql/) By Ahmed Bouchefra 
+* [Installation](https://cli.vuejs.org/guide/installation.html)
+
+## vue-graphql-demo
+
+### Project setup
+
 ```
 npm install
 ```
