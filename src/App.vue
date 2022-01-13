@@ -19,20 +19,19 @@
    </tr>
  </table>
 
- </br>
-
+ <br/>
     <form>
       <label>First Name</label>
       <input type="text" name="firstName" v-model="firstName">
-      </br>
+      <br/>
 
       <label>Last Name</label>
       <input type="text" name="lastName" v-model="lastName">
-      </br>
+      <br/>
 
       <label>Email</label>
       <input type="email" name="email" v-model="email">
-      </br>
+      <br/>
       
       <input v-if="!id" type="button" @click="createContact(firstName, lastName, email)" value="Add">
       <input v-if="id" type="button" @click="updateContact(id, firstName, lastName, email)" value="Update">
