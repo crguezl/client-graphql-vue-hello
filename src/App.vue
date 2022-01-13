@@ -1,14 +1,17 @@
 <template>
   <div id="app">
+  <h1>Agenda</h1>
   <table border='1' width='100%' style='border-collapse: collapse;'>
    <tr>
+     <th>ID</th>
      <th>First Name</th>
      <th>Last Name</th>
      <th>Email</th>
      <th>Actions</th>
    </tr>
 
-   <tr v-for='contact in contacts'>
+   <tr v-for='contact in contacts' :key="contact.id">
+     <td>{{  contact.id }}</td>
      <td>{{ contact.firstName }}</td>
      <td>{{ contact.lastName }}</td>
      <td>{{ contact.email }}</td>
@@ -20,25 +23,31 @@
  </table>
 
  <br/>
+       
+      <div v-if="id">
+        <h2>Update Contact</h2>
+      </div>
+      <div v-else>
+        <h2>Create new Contact</h2>
+      </div>
+
     <form>
-      <label>First Name</label>
+      <label>First Name: </label>
       <input type="text" name="firstName" v-model="firstName">
       <br/>
 
-      <label>Last Name</label>
+      <label>Last Name: </label>
       <input type="text" name="lastName" v-model="lastName">
       <br/>
 
-      <label>Email</label>
+      <label>Email:     </label>
       <input type="email" name="email" v-model="email">
       <br/>
       
-      <input v-if="!id" type="button" @click="createContact(firstName, lastName, email)" value="Add">
-      <input v-if="id" type="button" @click="updateContact(id, firstName, lastName, email)" value="Update">
-      <input type="button" @click="clearForm()" value="Clear">
-      
+      <input v-if="id" type="button" @click="updateContact(id, firstName, lastName, email)" value="Update Contact">
+      <input v-else type="button" @click="createContact(firstName, lastName, email)" value="Add new Contact">
+       <input type="button" @click="clearForm()" value="Clear Form">  
     </form>
-
 </div>
 </template>
 
