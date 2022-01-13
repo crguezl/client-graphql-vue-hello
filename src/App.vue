@@ -16,14 +16,13 @@
      <td>{{ contact.lastName }}</td>
      <td>{{ contact.email }}</td>
      <td>
-      <input type="button" @click="selectContact(contact)" value="Select">
-      <input type="button" @click="deleteContact(contact.id)" value="Delete">
+      <input type="button" @click="selectContact(contact)" value="Select" class="btn btn-primary">
+      <input type="button" @click="deleteContact(contact.id)" value="Delete" class="btn btn-cancel">
      </td> 
    </tr>
  </table>
 
- <br/>
-       
+ <br/> 
       <div v-if="id">
         <h2>Update Contact</h2>
       </div>
@@ -44,9 +43,22 @@
       <input type="email" name="email" v-model="email">
       <br/>
       
-      <input v-if="id" type="button" @click="updateContact(id, firstName, lastName, email)" value="Update Contact">
-      <input v-else type="button" @click="createContact(firstName, lastName, email)" value="Add new Contact">
-       <input type="button" @click="clearForm()" value="Clear Form">  
+      <input 
+        v-if="id" 
+        type="button"
+        class="btn btn-primary"
+        @click="updateContact(id, firstName, lastName, email)" 
+        value="Update Contact">
+      <input 
+      v-else 
+        type="button" 
+        class="btn btn-primary"
+        @click="createContact(firstName, lastName, email)" value="Add new Contact">
+       
+      <input 
+        type="button" class="btn btn-cancel"
+        @click="clearForm()" 
+        value="Clear Form">  
     </form>
 </div>
 </template>
@@ -148,6 +160,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped src="./App.css">
 </style>
