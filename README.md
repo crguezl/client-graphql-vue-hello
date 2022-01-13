@@ -1,7 +1,7 @@
 ## Vue Cli
 
 * [Building a CRUD App with Vue and GraphQL](https://blog.jscrambler.com/building-a-crud-app-with-vue-and-graphql/) By Ahmed Bouchefra 
-* [Installation](https://cli.vuejs.org/guide/installation.html)
+* [Vue cli Installation](https://cli.vuejs.org/guide/installation.html)
 
 ## vue-graphql-demo
 
