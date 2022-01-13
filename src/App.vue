@@ -97,8 +97,17 @@ export default {
     updateContact(id, firstName, lastName, email){
       console.log(`Update contact: # ${id}`)
       this.$apollo.mutate({
-          mutation: gql`mutation updateContact($id: ID!, $firstName: String!, $lastName: String!, $email: String!){
-            updateContact(id: $id, firstName: $firstName, lastName: $lastName, email: $email)
+          mutation: gql`mutation updateContact(
+            $id: ID!, 
+            $firstName: String, 
+            $lastName: String!, 
+            $email: String!) {
+            updateContact(id: $id, firstName: $firstName, lastName: $lastName, email: $email) {
+              id,
+              firstName,
+              lastName,
+              email}
+          }
           `,
           variables:{
             id: id,
