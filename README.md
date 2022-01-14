@@ -33,3 +33,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## References
+
+* [Location.reload()](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
