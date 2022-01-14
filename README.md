@@ -2,6 +2,7 @@
 
 * <https://github.com/crguezl/fullstack-graphql-vue>
 
+For the solution see branch [soution](https://github.com/crguezl/client-graphql-vue-hello/tree/solution) in this repo [crguezl/client-graphql-vue-hello](https://github.com/crguezl/client-graphql-vue-hello)
 
 ## Vue Cli
 
