@@ -12,9 +12,11 @@ For the solution see branch [solution](https://github.com/crguezl/client-graphql
 
 * <https://github.com/crguezl/fullstack-graphql-vue>
 
-## Vue Cli
+## References
+
 
 * [Building a CRUD App with Vue and GraphQL](https://blog.jscrambler.com/building-a-crud-app-with-vue-and-graphql/) By Ahmed Bouchefra 
+* [Location.reload()](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
 * [Vue cli Installation](https://cli.vuejs.org/guide/installation.html)
 
 ## Branch solution: npm scripts for developing
@@ -46,8 +48,6 @@ npm run lint
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-## References
-
-* [Location.reload()](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
