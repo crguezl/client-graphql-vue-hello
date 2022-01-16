@@ -1,5 +1,6 @@
 ## TODO 
 
+* Be sure to run the server side to test your progress
 * [ ] `npm install -g @vue/cli`
 * [ ] `vue create -n --merge full-stack-graphql-vue-client-casiano-rodriguez-leon-casiano` 
   * `-n, --no-git                    Skip git initialization`
@@ -32,6 +33,8 @@ For the solution see branch [solution](https://github.com/crguezl/client-graphql
 * [Building a CRUD App with Vue and GraphQL](https://blog.jscrambler.com/building-a-crud-app-with-vue-and-graphql/) By Ahmed Bouchefra 
 * [Location.reload()](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
 * [Vue cli Installation](https://cli.vuejs.org/guide/installation.html)
+* [Lab GraphQL-Simple-Client](https://ull-mii-sytws.github.io/practicas/graphql-simple-client/)
+  
 
 ## Branch solution: npm scripts for developing
 
