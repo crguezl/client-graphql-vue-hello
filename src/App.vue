@@ -91,7 +91,7 @@ export default {
       email: "",
     };
   },
-  apollo: {
+  apollo: { // See https://apollo.vuejs.org/guide/apollo/#queries
     contacts: gql`
       query {
         contacts {
@@ -106,7 +106,7 @@ export default {
   methods: {
     createContact(firstName, lastName, email) {
       console.log(`Create contact: ${email}`);
-      this.$apollo.mutate({
+      this.$apollo.mutate({ // See https://apollo.vuejs.org/guide/apollo/#mutations
         mutation: gql`
           mutation createContact(
             $firstName: String!

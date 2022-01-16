@@ -35,6 +35,7 @@
       apolloProvider,        //  h is the "createElement" function
     }).$mount("#app");       // We mount it in the "#app" element of public/index.html
   ```
+  See [Vue Apollo](https://apollo.vuejs.org/guide/apollo)
 
 ## Read
 
