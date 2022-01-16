@@ -16,11 +16,12 @@
     import ApolloClient from "apollo-boost";
     import VueApollo from "vue-apollo";
 
+    // Apollo Boost is a zero-config way to start using Apollo Client. It includes some sensible defaults.
     const apolloClient = new ApolloClient({
       uri: "http://localhost:4000/graphql",
     });
 
-    Vue.use(VueApollo);
+    Vue.use(VueApollo); // Let us use the VueApollo plugin https://es.vuejs.org/v2/guide/plugins.html
 
     const apolloProvider = new VueApollo({
       defaultClient: apolloClient,
@@ -29,9 +30,9 @@
     Vue.config.productionTip = false;
 
     new Vue({
-      render: (h) => h(App),
-      apolloProvider,
-    }).$mount("#app");
+      render: (h) => h(App), //  A render function is an alternative to templates.
+      apolloProvider,        //  h is the "createElement" function
+    }).$mount("#app");       // We mount it in the "#app" element of public/index.html
   ```
 
 ## Read
