@@ -1,5 +1,6 @@
 ## TODO 
 
+* El grupo que debe crear en la aceptación debe seguir el patrón nombre-apellido1-apellido2-aluXXXX
 * Inside the assignment repo create a folder `client` and make it a repo
 * [ ] `npm install -g @vue/cli`
 * [ ] `vue create client` 
