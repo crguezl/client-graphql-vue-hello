@@ -1,8 +1,7 @@
 ## TODO 
 
-* [ ] Install Sqlite3
 * [ ] `npm install -g @vue/cli`
-* [ ] `vue create client` 
+* [ ] `vue create -n --merge full-stack-graphql-vue-client-casiano-rodriguez-leon-casiano` 
 * [ ] Install these `npm install --save vue-apollo graphql apollo-boost`
 
   ```
