@@ -1,9 +1,7 @@
 ## TODO 
 
-* El grupo que debe crear en la aceptación debe seguir el patrón nombre-apellido1-apellido2-aluXXXX
-* Inside the assignment repo create a folder `client` and make it a repo
 * [ ] `npm install -g @vue/cli`
-* [ ] `vue create client` 
+* [ ] `vue create -n --merge full-stack-graphql-vue-client-casiano-rodriguez-leon-casiano` 
 * [ ] Install these `npm install --save vue-apollo graphql apollo-boost`
 
   ```
