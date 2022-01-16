@@ -2,6 +2,9 @@
 
 * [ ] `npm install -g @vue/cli`
 * [ ] `vue create -n --merge full-stack-graphql-vue-client-casiano-rodriguez-leon-casiano` 
+  * `  -n, --no-git                    Skip git initialization`
+  * ` --merge                         Merge target directory if it exists`
+* [ ] Have the branch `solution` at hand to check any doubts: `git worktree add ../client-solution solution`
 * [ ] Install these `npm install --save vue-apollo graphql apollo-boost`
 
   ```
