@@ -14,7 +14,8 @@
     import App from "./App.vue";
 
     import ApolloClient from "apollo-boost";
-    import VueApollo from "vue-apollo";
+    import VueApollo from "vue-apollo"; 
+    // After installing vue-apollo in your app, all your components can now use Apollo through the 'apollo' option.
 
     // Apollo Boost is a zero-config way to start using Apollo Client. It includes some sensible defaults.
     const apolloClient = new ApolloClient({
