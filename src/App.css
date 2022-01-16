@@ -33,6 +33,15 @@ input[type="text"], input[type="email"]{
     background: #3490DC;
 }
 
+.btn-secondary {
+    background: #1fba5a;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #0d5e2c;
+}
+
 .btn-cancel {
     background: #EF5753;
     color: #fff;

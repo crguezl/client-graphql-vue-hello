@@ -56,7 +56,7 @@
       <input
         v-if="id"
         type="button"
-        class="btn btn-primary"
+        class="btn btn-secondary"
         @click="updateContact(id, firstName, lastName, email)"
         value="Update Contact"
       />

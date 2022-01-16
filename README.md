@@ -1,3 +1,15 @@
+## TODO 
+
+* Inside the assignment repo create a folder `client` and make it a repo
+* [ ] `npm install -g @vue/cli`
+* [ ] `vue create client` 
+* [ ] Install these `npm install --save vue-apollo graphql apollo-boost`
+
+  ```
+  cd client
+  npm run serve
+  ```
+
 ## Read
 
 * [Build a GraphQL API with Node](https://blog.jscrambler.com/build-a-graphql-api-with-node/) By Ahmed Bouchefra
