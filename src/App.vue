@@ -81,7 +81,7 @@
 <script>
 import gql from "graphql-tag";
 // This is an example of how to load a separated GraphQL file. See file vue.config.js
-import createContactMutation from './create-contact.gql'
+import { createContactMutation, updateContactMutation } from './create-contact.gql'
 
 export default {
   name: "app",
@@ -122,26 +122,7 @@ export default {
     updateContact(id, firstName, lastName, email) {
       console.log(`Update contact: # ${id}`);
       this.$apollo.mutate({
-        mutation: gql`
-          mutation updateContact(
-            $id: ID!
-            $firstName: String
-            $lastName: String!
-            $email: String!
-          ) {
-            updateContact(
-              id: $id
-              firstName: $firstName
-              lastName: $lastName
-              email: $email
-            ) {
-              id
-              firstName
-              lastName
-              email
-            }
-          }
-        `,
+        mutation: updateContactMutation,
         variables: {
           id: id,
           firstName: firstName,

@@ -1,5 +1,23 @@
-mutation createContact($firstName: String! $lastName: String! $email: String!) {
+mutation createContactMutation($firstName: String! $lastName: String! $email: String!) {
 	createContact(firstName: $firstName	lastName: $lastName	email: $email) {
+		id
+		firstName
+		lastName
+		email
+	}
+}
+mutation updateContactMutation(
+$id: ID!
+$firstName: String
+$lastName: String!
+$email: String!
+) {
+	updateContact(
+	id: $id
+	firstName: $firstName
+	lastName: $lastName
+	email: $email
+	) {
 		id
 		firstName
 		lastName
