@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <h1>Agenda</h1>
+
+    <h1>Agenda</h1>    
+
+    <div class="loading" v-if="$apollo.queries.contactos.loading">
+      <img src="./assets/loader.gif" /> Loading ...
+    </div>
+
     <table border="1" width="100%" style="border-collapse: collapse">
       <tr>
         <th>ID</th>
