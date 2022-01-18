@@ -80,6 +80,7 @@
 
 <script>
 import gql from "graphql-tag";
+      import createContactMutation from './create-contact.gql'
 
 export default {
   name: "app",
@@ -107,24 +108,7 @@ export default {
     createContact(firstName, lastName, email) {
       console.log(`Create contact: ${email}`);
       this.$apollo.mutate({ // See https://apollo.vuejs.org/guide/apollo/#mutations
-        mutation: gql`
-          mutation createContact(
-            $firstName: String!
-            $lastName: String!
-            $email: String!
-          ) {
-            createContact(
-              firstName: $firstName
-              lastName: $lastName
-              email: $email
-            ) {
-              id
-              firstName
-              lastName
-              email
-            }
-          }
-        `,
+        mutation: createContactMutation,
         variables: {
           firstName: firstName,
           lastName: lastName,
