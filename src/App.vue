@@ -80,7 +80,8 @@
 
 <script>
 import gql from "graphql-tag";
-      import createContactMutation from './create-contact.gql'
+// This is an example of how to load a separated GraphQL file. See file vue.config.js
+import createContactMutation from './create-contact.gql'
 
 export default {
   name: "app",
