@@ -57,8 +57,8 @@ For the solution see branch [solution](https://github.com/crguezl/client-graphql
 * [Building a CRUD App with Vue and GraphQL](https://blog.jscrambler.com/building-a-crud-app-with-vue-and-graphql/) By Ahmed Bouchefra 
 * [Location.reload()](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
 * [Vue cli Installation](https://cli.vuejs.org/guide/installation.html)
-* [Lab GraphQL-Simple-Client](https://ull-mii-sytws.github.io/practicas/graphql-simple-client/)
-  
+* [Vue Apollo Guide](https://vue-apollo.netlify.app/guide/installation.html#vue-cli-plugin)
+* [Building APIs With GraphQL in Your Node.js Application](https://blog.appsignal.com/2020/06/03/building-apis-with-graphql-in-your-node-application.html) by Diogo Souza on Jun 3, 2020
 
 ## Branch solution: npm scripts for developing
 
@@ -88,7 +88,7 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
+### Vue Cli Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
