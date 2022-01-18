@@ -106,12 +106,12 @@ export default {
       }
     `,
   },
-  methods: {
+  methods: { 
     createContact(firstName, lastName, email) {
-      console.log(`Create contact: ${email}`);
+      // https://apollo.vuejs.org/api/dollar-apollo.html the $apollo api
       this.$apollo.mutate({ // See https://apollo.vuejs.org/guide/apollo/#mutations
         mutation: createContactMutation,
-        variables: {
+        variables: { // https://apollo.vuejs.org/guide/apollo/queries.html#query-with-parameters
           firstName: firstName,
           lastName: lastName,
           email: email,
