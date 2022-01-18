@@ -10,7 +10,7 @@
         <th>Actions</th>
       </tr>
 
-      <tr v-for="contact in contacts" :key="contact.id">
+      <tr v-for="contact in contactos" :key="contact.id">
         <td>{{ contact.id }}</td>
         <td>{{ contact.firstName }}</td>
         <td>{{ contact.lastName }}</td>
@@ -81,7 +81,10 @@
 <script>
 import gql from "graphql-tag";
 // This is an example of how to load a separated GraphQL file. See file vue.config.js
-import { createContactMutation, updateContactMutation } from './create-contact.gql'
+import {
+  createContactMutation,
+  updateContactMutation,
+} from "./create-contact.gql";
 
 export default {
   name: "app",
@@ -93,25 +96,31 @@ export default {
       email: "",
     };
   },
-  apollo: { // See https://apollo.vuejs.org/guide/apollo/#queries  Vue-Apollo options here
+  apollo: {
+    // See https://apollo.vuejs.org/guide/apollo/#queries  Vue-Apollo options here
     // In the apollo object, add an attribute for each property you want to feed with the result of an Apollo query
-    contacts: gql`
-      query {
-        contacts {
-          id
-          firstName
-          lastName
-          email
+    contactos: { // See https://apollo.vuejs.org/guide/apollo/queries.html#name-matching
+      query: gql`
+        query {
+          contacts {
+            id
+            firstName
+            lastName
+            email
+          }
         }
-      }
-    `,
+      `,
+      update: (data) => data.contacts,
+    },
   },
-  methods: { 
+  methods: {
     createContact(firstName, lastName, email) {
       // https://apollo.vuejs.org/api/dollar-apollo.html the $apollo api
-      this.$apollo.mutate({ // See https://apollo.vuejs.org/guide/apollo/#mutations
+      this.$apollo.mutate({
+        // See https://apollo.vuejs.org/guide/apollo/#mutations
         mutation: createContactMutation,
-        variables: { // https://apollo.vuejs.org/guide/apollo/queries.html#query-with-parameters
+        variables: {
+          // https://apollo.vuejs.org/guide/apollo/queries.html#query-with-parameters
           firstName: firstName,
           lastName: lastName,
           email: email,
@@ -120,7 +129,7 @@ export default {
       location.reload();
     },
     updateContact(id, firstName, lastName, email) {
-      console.log(`Update contact: # ${id}`);
+      //console.log(`Update contact: # ${id}`);
       this.$apollo.mutate({
         mutation: updateContactMutation,
         variables: {
@@ -133,7 +142,7 @@ export default {
       location.reload(); // refresh the page
     },
     deleteContact(id) {
-      console.log(`Delete contact: # ${id}`);
+      //console.log(`Delete contact: # ${id}`);
       this.$apollo.mutate({
         mutation: gql`
           mutation deleteContact($id: ID!) {
