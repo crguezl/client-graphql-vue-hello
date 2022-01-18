@@ -51,6 +51,14 @@ For the solution see branch [solution](https://github.com/crguezl/client-graphql
 
 * <https://github.com/crguezl/fullstack-graphql-vue>
 
+## gql-tag
+
+* [apollographql/graphql-tag](https://github.com/apollographql/graphql-tag#webpack-loading-and-preprocessing)
+
+GraphQL strings are the right way to write queries in your code, because they can be statically analyzed using tools like [eslint-plugin-graphql](https://github.com/apollographql/eslint-plugin-graphql). However, strings are inconvenient to manipulate, if you are trying to do things like add extra fields, merge multiple queries together, or other interesting stuff.
+
+That's where this package comes in - it lets you write your queries with [ES2015 template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) and compile them into an AST with the `gql` tag.
+
 ## References
 
 
