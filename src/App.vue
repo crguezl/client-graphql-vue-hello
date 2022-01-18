@@ -93,7 +93,8 @@ export default {
       email: "",
     };
   },
-  apollo: { // See https://apollo.vuejs.org/guide/apollo/#queries
+  apollo: { // See https://apollo.vuejs.org/guide/apollo/#queries  Vue-Apollo options here
+    // In the apollo object, add an attribute for each property you want to feed with the result of an Apollo query
     contacts: gql`
       query {
         contacts {
@@ -119,7 +120,6 @@ export default {
       location.reload();
     },
     updateContact(id, firstName, lastName, email) {
-      // eslint-disable-next-line no-console
       console.log(`Update contact: # ${id}`);
       this.$apollo.mutate({
         mutation: gql`
