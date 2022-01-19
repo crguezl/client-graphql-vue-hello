@@ -85,7 +85,7 @@
 </template>
 
 <script>
-import gql from "graphql-tag";
+import gql from "graphql-tag"; // https://github.com/apollographql/graphql-tag
 // This is an example of how to load a separated GraphQL file. See file vue.config.js
 import {
   createContactMutation,
