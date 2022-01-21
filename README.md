@@ -59,6 +59,15 @@ GraphQL strings are the right way to write queries in your code, because they ca
 
 That's where this package comes in - it lets you write your queries with [ES2015 template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) and compile them into an AST with the `gql` tag.
 
+## Optional Extensions
+
+### Deploy in Heroku
+  * [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
+
+### Add authentication
+    * See [Handling authentication in your GraphQL-powered Vue app](https://blog.logrocket.com/handling-authentication-in-your-graphql-powered-vue-app/) by [Anjolaoluwa Adebayo-Oyetoro](https://blog.logrocket.com/author/anjolaoluwaadebayooyetoro/)
+
+
 ## References
 
 
